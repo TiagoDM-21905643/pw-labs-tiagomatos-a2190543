@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>PW Lab2</title>
+        <meta name="author" content="Tiago Matos">
+        <meta name="keywords" content="Quizz">
+        <meta name="description" content="Website sobre Lisboa">
+        <link rel="shortcut icon" type="image/x-icon" href="images/icon.png"/>
+        <body style="background-color:grey"></body>
+        <style>
+            h1 {text-align: center;}
+            img {text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1> Osaka </h1>
+        <center><img src="images/osaka.png"></center>
+        <br>
+        <center><p><a href="index.html">Introdução</a> | 
+            <a href="local.html">Localização</a> | 
+            <a href="multimedia.html">Multimédia</a> | 
+            <a href="info.html">Informações</a> | 
+            <a href="../index.html">Home</a> | 
+            <a href="quizz.html"><b>Quizz</b></a> | 
+            <a href="comentarios.html">Comentários</a></p></center>
+
+        <h3> Quizz </h3>
+        <form action="tiago.dias.matos@gmail.com" method="post">
+            <fieldset>
+                <label>Nome: <input type="text" name="nome" placeholder="Insira o seu nome" autocomplete="given-name" size=25 required autofocus></label>
+                <br>
+                <label>Apelido: <input type="text" name="apelido" placeholder="Insira o seu apelido" autocomplete="family-name" size=23 required></label>
+                <br>
+                <label>Email: <input type="email" name="email" placeholder="Insira um email válido" autocomplete="email" size=25 required multiple></label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>Em que continente se localiza Osaka?</p>
+                <input type="radio" name="continente" value="america">
+                <label for="america">América</label><br>
+                <input type="radio" name="continente" value="asia">
+                <label for="asia">Ásia</label><br>
+                <input type="radio" name="continente" value="oceania">
+                <label for="oceania">Oceania</label><br>
+                <input type="radio" name="continente" value="antartida">
+                <label for="antartida">Antártida</label><br>
+                <input type="radio" name="continente" value="europa">
+                <label for="europa">Europa</label>
+
+                <br><br>
+                <label>Escolha as opções corretas:</label><br><br>
+                <select>
+                    <option value="frase1">Osaka é uma cidade.</option>
+                    <option value="frase2">Osaka é um país.</option>
+                </select>
+                <br><br>
+                <input list="pais">
+                <datalist id="pais">
+                    <option value="Osaka está localizada na China.  ">
+                    <option value="Osaka está localizada no Japão.  ">
+                </datalist>
+
+                <p>De 0 a 100 quanto gostarias de ir a Osaka?</p>
+                <input type="number" name="vontade" min="0" max="100">
+
+                <p>Em que data gostaria de ir?</p>
+                <input id="date" type="date"><br>
+
+                <p>Escolha a cor que o/a faz lembrar de Osaka.</p>
+                <input type="color" value="#ff0000">
+
+                <p>Quantos milhões de habitantes acha que Osaka tem?</p>
+                <input type="range" step="100000" min="0" max="10000000" oninput="this.nextElementSibling.value = this.value">
+                <output>500000</output>
+
+                <br>
+                <p>Dê a sua opinião em relação a Osaka.</p>
+                <textarea name="opiniao" cols="55" rows="7" maxlength="350" placeholder="Máx 350 characteres"></textarea>
+
+                <br><br>
+                <input type="image" src="images/submit.gif" alt="Submit" width="48" height="48">
+            </fieldset>
+        </form>
+    </body>
+</html>
