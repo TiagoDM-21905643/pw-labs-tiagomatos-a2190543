@@ -21,10 +21,88 @@
             <a href="local.html">Localização</a> | 
             <a href="multimedia.html">Multimédia</a> | 
             <a href="info.html">Informações</a> | 
-            <a href="../index.html">Home</a> | 
             <a href="quizz.html">Quizz</a> | 
-            <a href="comentarios.html"><b>Comentários</b></a></p></center>
+            <a href="comentarios.html"><b>Comentários</b></a> | 
+            <a href="../index.html">Home</a></p></center>
         <h3> Comentários </h3>
-        
+        <fieldset>
+            <form action="mailto:tiago.dias.matos@gmail.com" method="post">
+                <p>
+                    Selecione as caixas que acha que representam este website.<br>
+                    <input type="checkbox" value="Compreensível e claro" > Compreensível e claro<br>
+                    <input type="checkbox" value="Significante" > Significante<br>
+                    <input type="checkbox" value="Criativo e original" > Criativo e original<br>
+                    <input type="checkbox" value="Responsivo" > Guias de Visita<br>
+                </p>
+
+                <p>
+                    Encontrou algum erro neste?<br>
+                    <input type="radio" name="needed" required value="Sim"> Sim.
+                    <textarea rows="1" cols="55" placeholder="Se sim por favor descreva o erro e a sua localização."></textarea><br>
+                    <input type="radio" name="needed" required value ="Nao"> Não.<br>
+                </p>
+                
+                <p>
+                    Avalie as várias páginas do website de 0 a 10:<br>
+                    <table>
+                        <tr>
+                            <td><a href="index.html" target="_blank">Introdução</a></td>
+                            <td>
+                                <input type="range" id="Introdução" name="Introdução" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                                <output>5</output><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="local.html" target="_blank">Localização</a></td>
+                            <td>
+                                <input type="range" id="Localização" name="Localização" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                                <output>5</output><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="multimedia.html" target="_blank">Multimédia</a></td>
+                            <td>
+                                <input type="range" id="Multimédia" name="Multimédia" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                                <output>5</output><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="info.html" target="_blank">Informações</a></td>
+                            <td>
+                                <input type="range" id="Informações" name="Informações" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                                <output>5</output><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="quizz.html" target="_blank">Quizz</a></td>
+                            <td>
+                                <input type="range" id="Quizz" name="Quizz" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                                <output>5</output><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="comentarios.html" target="_blank">Comentários</a></td>
+                            <td>
+                                <input type="range" id="Comentários" name="Comentários" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                                <output>5</output><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="../index.html" target="_blank">Home</a></td>
+                            <td>
+                                <input type="range" id="Home" name="Home" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+                                <output>5</output><br>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </p>
+                <p>
+                    Deixe aqui as suas sugestões para este website:<br><br>
+                    <textarea cols="50" rows="10" placeholder="Insira aqui as suas sugestões"></textarea>
+                </p>
+                <center><input type="submit" value="Submit" alt="Submit"></center>
+            </form>
+        </fieldset>
     </body>
 </html>
