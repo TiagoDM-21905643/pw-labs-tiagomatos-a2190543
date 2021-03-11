@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <title>PW Labs</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/home.png"/>
+    <body style="background-color:rgba(60, 120, 180, 0.8)"></body>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: large;
+        }
+
+        .vertical-menu {
+            width: 200px;
+        }
+        
+        .vertical-menu a {
+            background-color: rgba(50, 130, 180, 0.5);
+            color: white;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+        
+        .vertical-menu a:hover {
+            background-color: rgb(50, 130, 180);
+        }
+    </style>
 </head>
 <body>
-    <h1> Laboratórios Programação Web </h1>
-    <p><a href="lab1/index.html">Laboratório 1: Conhecer a Internet com a minha primeira página Web</a></p>
-    <p><a href="lab2/index.html">Laboratório 2: Explorando o HTML com o meu primeiro website</a></p>
-    <p><a href="lab3/index.html">Laboratório 3: Inclusão de formulários e imagens SVG no meu website</a></p>
+    <center>
+        <h1> Laboratórios Programação Web </h1>
+        <div class="vertical-menu">
+            <span title="Conhecer a Internet com a minha primeira página Web">
+                <a href="lab1/index.html" >Laboratório 1</a>
+            </span>
+            <span title="Explorando o HTML com o meu primeiro website">
+                <a href="lab2/index.html" >Laboratório 2</a>
+            </span>
+            <span title="Inclusão de formulários e imagens SVG no meu website">
+                <a href="lab3/index.html" >Laboratório 3</a>
+            </span>
+            <span title="Integração de elementos semânticos HTML5 no meu website e estilização com seletores e propriedades CSS">
+                <a href="lab4/index.html" >Laboratório 4</a>
+            </span>
+        </div>
+    </center>
 </body>
 </html>
