@@ -124,19 +124,19 @@ footer {
 	text-align: right;
 }
 table {
-    border-collapse: collapse;
-    width: 50%;
-    background-color: rgb(204, 121, 230);
-    text-align: center;
-    margin-left: 25%;
-  }
+	border-collapse: collapse;
+	width: 50%;
+	background-color: rgb(204, 121, 230);
+	text-align: center;
+	margin-left: 25%;
+}
 
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
 
-  table caption {
-      padding: 20px;
-  }
+table caption {
+	padding: 20px;
+}
