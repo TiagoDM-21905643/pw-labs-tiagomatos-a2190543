@@ -1,6 +1,6 @@
 #menu {
-	background: #0099CC;
-	background: linear-gradient(to bottom,  #266ECC,  #40CCFF);
+	background: #eb9dd3;
+	background: linear-gradient(to bottom,  #d75adb,  #f096f3);
 	color: #FFF;
 	height: 45px;
 	padding-left: 18px;
@@ -34,7 +34,7 @@
 }
 #menu li a:hover {
 	color: #FFFFFF;
-	background: linear-gradient(to bottom,  #005FCC,  #00EEFF);
+	background: linear-gradient(to bottom,  #a75adb,  #d996f3);
 }
 #menu input {
 	display: none;
@@ -83,7 +83,7 @@
 }
 @media screen and (max-width: 800px){
 	#menu {position:relative}
-	#menu ul {background:linear-gradient(to bottom,  #005FCC,  #00EEFF);position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul {background:linear-gradient(to bottom,  #d75adb,  #f096f3);position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
 	#menu ul.sub-menus {width:100%;position:static;}
 	#menu ul.sub-menus a {padding-left:30px;}
 	#menu li {display:block;float:none;width:auto;}
@@ -93,9 +93,26 @@
 	#menu input:checked + label:before {content:"\00d7"}
 	#menu input:checked ~ ul {display:block}
 }
-body {
+html {
+	background-image: url(images/bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+* {
 	font-family: 'Roboto', sans-serif;
 	font-size: large;
+}
+body {
+	width: 900px;
+	min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    position: relative;
+    background: #f7b2e2e3;
+    box-shadow: black 0 2px 5px 0;
 }
 header {
 	text-align: center;
@@ -106,3 +123,20 @@ h3 {
 footer {
 	text-align: right;
 }
+table {
+    border-collapse: collapse;
+    width: 50%;
+    background-color: rgb(204, 121, 230);
+    text-align: center;
+    margin-left: 25%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  table caption {
+      padding: 20px;
+  }

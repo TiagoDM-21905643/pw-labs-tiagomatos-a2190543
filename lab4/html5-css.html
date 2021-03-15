@@ -8,13 +8,26 @@
         <meta name="description" content="HTML5-CSS">
         <link rel="stylesheet" type="text/css" href="estilos.css">
         <link rel="shortcut icon" type="image/x-icon" href="images/icon.png"/>
-        <body style="background-color:rgba(60, 120, 180, 0.8)"></body>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <h1> Osaka </h1>
-            <img src="images/osaka.png">
+            <br><h1> Osaka </h1>
+            <figure>
+                <img src="images/osaka.png">
+                <figcaption>Rio em Osaka</figcaption>
+                <details>
+                    <summary>Local</summary>
+                    <p>Dontonbori in Osaka, Japan</p>
+                </details>
+            </figure>
         </header><br>
 
         <nav id='menu'>
@@ -32,14 +45,175 @@
         </nav>
 
         <main>
-            <h3> HTML5-CSS </h3>
+            <h3> HTML5 e CSS </h3>
 
             <section>
-                
+                <p><a href='pt.wikipedia.org/wiki/HTML5'>HTML5</a> (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.</p>
+                <table>
+                    <caption>Elementos HTML5</caption>
+                    <thead>
+                        <tr style="background-color:rgba(107, 46, 187, 0.685)">
+                            <th>Elementos</th>
+                            <th>Usado</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>main</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>section</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>nav</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>header</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+    
+                        <tr>
+                            <td>article</td>
+                            <td><i class="material-icons">clear</i></td>
+                            <td>Não usei</td>
+                        </tr>
+    
+                        <tr>
+                            <td>aside</td>
+                            <td><i class="material-icons">clear</i></td>
+                            <td>Não usei</td>
+                        </tr>
+    
+                        <tr>
+                            <td>footer</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Nas páginas todas.</td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+            </section><hr>
+
+            <section>
+                <p><a href='pt.wikipedia.org/wiki/Cascading_Style_Sheets'>CSS</a> (Cascading Style Sheets) é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) a um documento web.</p>
+                <table>
+                    <caption>Seletores de CSS</caption>
+                    <thead>
+                        <tr style="background-color:rgba(107, 46, 187, 0.685)">
+                            <th>Elementos</th>
+                            <th>Usado</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Universal</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>O seletor universal (*) aplica o estilo a todos os elementos da
+                                página.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tipo</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>O seletor de tipo usa o nome do marcador a estilizar.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Classe</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>O seletor de classe associa um nome a um estilo.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Id</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>O atributo id permite identificar univocamente um elemento
+                                do HTML</td>
+                        </tr>
+
+                        <tr>
+                            <td>Atributo</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Seletores que se aplicam a atributos de elementos.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pseudo-Class</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Seletor associado ao estado de um elemento.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pseudo-Elemento</td>
+                            <td><i class="material-icons">clear</i></td>
+                            <td>Seletor associado em partes de um elemento.</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </section><hr>
+
+            <section>
+                <table>
+                    <thead>
+                        <tr style="background-color:rgba(107, 46, 187, 0.685)">
+                            <th>Elementos</th>
+                            <th>Usado</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <caption>Combinadores de CSS</caption>
+                        <tr>
+                            <td>Descendentes</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>todos os tag que estão “dentro” de um tag.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Filhos</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>– todos os tag que estão “logo dentro” de tag.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Adjacentes</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>todos os tag que estão colocados depois de um tag.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Imediatamente adjacentes</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>– todos os tag que estão colocados “imediatamente” depois de um tag</td>
+                        </tr>
+
+                        <tr>
+                            <td>Agrupados</td>
+                            <td><i class="material-icons">done</i></td>
+                            <td>Mudar todos os tag ao mesmo tempo.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section><hr>
             
             <footer>
-                <p>Tiago Dias Matos | a21905643 | ULHT | 2021</p>
+                <p>Tiago Dias Matos | a21905643 | ULHT | 2021</p><br>
             </footer>
         </main>
     </body>
