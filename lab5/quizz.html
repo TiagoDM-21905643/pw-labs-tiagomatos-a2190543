@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>PW Lab5</title>
+        <meta name="author" content="Tiago Matos">
+        <meta name="keywords" content="Quizz">
+        <meta name="description" content="Quizz sobre Osaka">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/icon.png"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="parent">
+            <div class="div1">
+                <header>
+                    <br><h1> Osaka </h1>
+                    <figure>
+                        <img src="images/osaka.png">
+                        <figcaption>Rio em Osaka</figcaption>
+                        <details>
+                            <summary>Local</summary>
+                            <p>Dontonbori in Osaka, Japan</p>
+                        </details>
+                    </figure>
+                </header><br>
+        
+                <nav id='menu'>
+                    <input type='checkbox' id='responsive-menu'><label></label>
+                    <ul>
+                        <li><a href='index.html'><span class="material-icons">article</span> Introdução</a></li>
+                        <li><a href='local.html'><span class="material-icons">push_pin</span> Localização</a></li>
+                        <li><a href='multimedia.html'><span class="material-icons">collections</span> Multimédia</a></li>
+                        <li><a href='info.html'><span class="material-icons">info</span> Informações</a></li>
+                        <li><a href='quizz.html'><span class="material-icons">quiz</span> <b>Quizz</b></a></li>
+                        <li><a href='comentarios.html'><span class="material-icons">chat</span> Comentários</a></li>
+                        <li><a href='html5-css.html'><span class="material-icons">code</span> HTML5 & CSS</a></li>
+                        <li><a href='../index.html'><span class="material-icons">home</span> Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="div2">
+                <main>
+                    <h3> Quizz </h3>
+        
+                    <form action="mailto:tiago.dias.matos@gmail.com" method="post">
+        
+                        <fieldset>
+                            <label>Nome: <input type="text" name="nome" placeholder="Insira o seu nome" autocomplete="given-name" size=25 required autofocus></label>
+                            <br>
+                            <label>Apelido: <input type="text" name="apelido" placeholder="Insira o seu apelido" autocomplete="family-name" size=23 required></label>
+                            <br>
+                            <label>Email: <input type="email" name="email" placeholder="Insira um email válido" autocomplete="email" size=25 required multiple></label>
+                        </fieldset><br>
+        
+                        <fieldset>
+                            <p>Em que continente se localiza Osaka?</p>
+                            <input type="radio" name="continente" value="america">
+                            <label for="america">América</label><br>
+                            <input type="radio" name="continente" value="asia">
+                            <label for="asia">Ásia</label><br>
+                            <input type="radio" name="continente" value="oceania">
+                            <label for="oceania">Oceania</label><br>
+                            <input type="radio" name="continente" value="antartida">
+                            <label for="antartida">Antártida</label><br>
+                            <input type="radio" name="continente" value="europa">
+                            <label for="europa">Europa</label><br><br>
+                            
+                            <label>Escolha as opções corretas:</label><br><br>
+                            <select>
+                                <option value="frase1">Osaka é uma cidade.</option>
+                                <option value="frase2">Osaka é um país.</option>
+                            </select><br><br>
+        
+                            <input list="pais">
+                            <datalist id="pais">
+                                <option value="Osaka está localizada na China.  ">
+                                <option value="Osaka está localizada no Japão.  ">
+                            </datalist>
+            
+                            <p>De 0 a 100 quanto gostarias de ir a Osaka?</p>
+                            <input type="number" name="vontade" min="0" max="100">
+            
+                            <p>Em que data gostaria de ir?</p>
+                            <input id="date" type="date"><br>
+            
+                            <p>Escolha a cor que o/a faz lembrar de Osaka.</p>
+                            <input type="color" value="#ff0000">
+            
+                            <p>Quantos milhões de habitantes acha que Osaka tem?</p>
+                            <input type="range" step="100000" min="0" max="10000000" oninput="this.nextElementSibling.value = this.value">
+                            <output>500000</output><br>
+        
+                            <p>Dê a sua opinião em relação a Osaka.</p>
+                            <textarea name="opiniao" cols="55" rows="7" maxlength="350" placeholder="Máx 350 characteres"></textarea><br><br>
+        
+                            <input type="image" src="images/submit.gif" alt="Submit" width="48" height="48">
+                        </fieldset>
+                    </form>
+                </main>
+            </div>
+            
+            <div class="div3">
+                <aside>
+                    <figure>
+                        <img src="images/osaka_castle.jpg" width="300px">
+                        <figcaption>Castelo de Osaka</figcaption>
+                        <details>
+                            <summary>Info</summary>
+                            <p>O Ōsaka-jō é um castelo situado em Chūō-ku, o distrito mais central de Osaka, no Japão.</p>
+                        </details>
+                    </figure><br>
+                    <hr><br>
+        
+                    <figure>
+                        <img src="images/osaka_tennoji_park_zoo.jpg" width="300px">
+                        <figcaption>Zoo de Osaka</figcaption>
+                        <details>
+                            <summary>Info</summary>
+                            <p>O Zoológico de Tennōji está localizado no Parque Tennōji em Tennōji-ku, Osaka, Japão,
+                                inaugurado em 1 de janeiro de 1915.</p>
+                        </details>
+                    </figure><br>
+                    <hr><br>
+        
+                    <figure>
+                        <img src="images/osaka_kobe_port_tower.jpg" width="300px">
+                        <figcaption>Port Tower em Osaka</figcaption>
+                        <details>
+                            <summary>Info</summary>
+                            <p>The Kobe Port Tower (神戸ポートタワー, Kōbe Pōto Tawā) is a landmark in the port city of Kobe, Japan.
+                            </p>
+                        </details>
+                    </figure><br>
+                    <hr><br>
+                </aside>
+        
+                <aside style="margin-left: 40px; margin-right: 40px;">
+                    <p><b>何でやねん (Nan-de-ya-nen) &#8680</b> Nandeyanen is possibly one of the most used phrases in Osaka. It
+                        translates to "What are you talking about?" or "You've got to be kidding!". Usually you would say
+                        that to someone who is being silly.</p><br>
+                </aside>
+            </div>
+        
+            <div class="div4">
+                <footer>
+                    <br><p>Tiago Dias Matos | a21905643 | ULHT | 2021</p><br>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

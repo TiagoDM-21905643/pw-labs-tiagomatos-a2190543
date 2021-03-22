@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PW Lab5</title>
+    
+    <meta name="author" content="Tiago Matos">
+    <meta name="keywords" content="Comentários">
+    <meta name="description" content="Comentários sobre o website">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1">
+            <header>
+                <br>
+                <h1> Osaka </h1>
+                <figure>
+                    <img src="images/osaka.png">
+                    <figcaption>Rio em Osaka</figcaption>
+                    <details>
+                        <summary>Local</summary>
+                        <p>Dontonbori in Osaka, Japan</p>
+                    </details>
+                </figure>
+            </header><br>
+
+            <nav id='menu' class='sticky'>
+                <input type='checkbox' id='responsive-menu'><label></label>
+                <ul>
+                    <li><a href='index.html'><span class="material-icons">article</span> Introdução</a></li>
+                    <li><a href='local.html'><span class="material-icons">push_pin</span> Localização</a></li>
+                    <li><a href='multimedia.html'><span class="material-icons">collections</span> Multimédia</a></li>
+                    <li><a href='info.html'><span class="material-icons">info</span> Informações</a></li>
+                    <li><a href='quizz.html'><span class="material-icons">quiz</span> Quizz</a></li>
+                    <li><a href='comentarios.html'><span class="material-icons">chat</span> <b>Comentários</b></a></li>
+                    <li><a href='html5-css.html'><span class="material-icons">code</span> HTML5 & CSS</a></li>
+                    <li><a href='../index.html'><span class="material-icons">home</span> Home</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="div2">
+            <main>
+                <h3> Comentários </h3>
+                <fieldset>
+                    <form action="mailto:tiago.dias.matos@gmail.com" method="post">
+                        <p>
+                            Selecione as caixas que acha que representam este website.<br>
+                            <input type="checkbox" value="Compreensível e claro"> Compreensível e claro<br>
+                            <input type="checkbox" value="Significante"> Significante<br>
+                            <input type="checkbox" value="Criativo e original"> Criativo e original<br>
+                            <input type="checkbox" value="Responsivo"> Guias de Visita<br>
+                        </p>
+
+                        <p>
+                            Encontrou algum erro neste?<br>
+                            <input type="radio" name="needed" required value="Sim"> Sim.
+                            <textarea rows="1" cols="55"
+                                placeholder="Se sim por favor descreva o erro e a sua localização."></textarea><br>
+                            <input type="radio" name="needed" required value="Nao"> Não.<br>
+                        </p>
+
+                        <p>
+                            Avalie as várias páginas do website de 0 a 10:<br>
+                        <table>
+                            <tr>
+                                <td><a href="index.html" target="_blank">Introdução</a></td>
+                                <td>
+                                    <input type="range" id="Introdução" name="Introdução" min="0" max="10"
+                                        oninput="this.nextElementSibling.value = this.value">
+                                    <output>5</output><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="local.html" target="_blank">Localização</a></td>
+                                <td>
+                                    <input type="range" id="Localização" name="Localização" min="0" max="10"
+                                        oninput="this.nextElementSibling.value = this.value">
+                                    <output>5</output><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="multimedia.html" target="_blank">Multimédia</a></td>
+                                <td>
+                                    <input type="range" id="Multimédia" name="Multimédia" min="0" max="10"
+                                        oninput="this.nextElementSibling.value = this.value">
+                                    <output>5</output><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="info.html" target="_blank">Informações</a></td>
+                                <td>
+                                    <input type="range" id="Informações" name="Informações" min="0" max="10"
+                                        oninput="this.nextElementSibling.value = this.value">
+                                    <output>5</output><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="quizz.html" target="_blank">Quizz</a></td>
+                                <td>
+                                    <input type="range" id="Quizz" name="Quizz" min="0" max="10"
+                                        oninput="this.nextElementSibling.value = this.value">
+                                    <output>5</output><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="comentarios.html" target="_blank">Comentários</a></td>
+                                <td>
+                                    <input type="range" id="Comentários" name="Comentários" min="0" max="10"
+                                        oninput="this.nextElementSibling.value = this.value">
+                                    <output>5</output><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="../index.html" target="_blank">Home</a></td>
+                                <td>
+                                    <input type="range" id="Home" name="Home" min="0" max="10"
+                                        oninput="this.nextElementSibling.value = this.value">
+                                    <output>5</output><br>
+                                </td>
+                            </tr>
+
+                        </table>
+                        </p>
+
+                        <p>
+                            Deixe aqui as suas sugestões para este website:<br><br>
+                            <textarea cols="50" rows="10" placeholder="Insira aqui as suas sugestões"></textarea>
+                        </p>
+                        <center><input type="submit" value="Submit" alt="Submit"></center>
+                    </form>
+                </fieldset>
+            </main>
+        </div>
+
+        <div class="div3">
+            <aside>
+                <figure>
+                    <img src="images/osaka_castle.jpg" width="300px">
+                    <figcaption>Castelo de Osaka</figcaption>
+                    <details>
+                        <summary>Info</summary>
+                        <p>O Ōsaka-jō é um castelo situado em Chūō-ku, o distrito mais central de Osaka, no Japão.</p>
+                    </details>
+                </figure><br>
+                <hr><br>
+
+                <figure>
+                    <img src="images/osaka_tennoji_park_zoo.jpg" width="300px">
+                    <figcaption>Zoo de Osaka</figcaption>
+                    <details>
+                        <summary>Info</summary>
+                        <p>O Zoológico de Tennōji está localizado no Parque Tennōji em Tennōji-ku, Osaka, Japão,
+                            inaugurado em 1 de janeiro de 1915.</p>
+                    </details>
+                </figure><br>
+                <hr><br>
+
+                <figure>
+                    <img src="images/osaka_kobe_port_tower.jpg" width="300px">
+                    <figcaption>Port Tower em Osaka</figcaption>
+                    <details>
+                        <summary>Info</summary>
+                        <p>The Kobe Port Tower (神戸ポートタワー, Kōbe Pōto Tawā) is a landmark in the port city of Kobe, Japan.
+                        </p>
+                    </details>
+                </figure><br>
+                <hr><br>
+            </aside>
+
+            <aside style="margin-left: 40px; margin-right: 40px;">
+                <p><b>何でやねん (Nan-de-ya-nen) &#8680</b> Nandeyanen is possibly one of the most used phrases in Osaka. It
+                    translates to "What are you talking about?" or "You've got to be kidding!". Usually you would say
+                    that to someone who is being silly.</p><br>
+            </aside>
+        </div>
+
+        <div class="div4">
+            <footer>
+                <br><p>Tiago Dias Matos | a21905643 | ULHT | 2021</p><br>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
